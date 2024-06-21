@@ -159,6 +159,7 @@ body {
       grid-template-columns: repeat(auto-fill, minmax(263px, 1fr));
       gap: 75px;
       justify-items: center;
+      cursor: pointer;
 }
 
 .country{
