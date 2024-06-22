@@ -49,3 +49,13 @@ select.addEventListener('change', () => {
             senRequest('all')
       }
 })
+
+const searchInput = document.querySelector('.search_input')
+
+searchInput.addEventListener('input', () => {
+      if (searchInput.value) {
+            senRequest(`name/${searchInput.value}`)
+      } else {
+            senRequest('all')
+      }
+})
