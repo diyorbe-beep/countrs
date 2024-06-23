@@ -24,6 +24,7 @@ function makeCountry(countries) {
             capitalCounty = country.capital ? country.capital.join(' / ') : '<span style="color: red;">No Capital</span></li>'
             console.log(country.capital);
             let a = document.createElement('a')
+            a.href = './countrs.html'
             a.classList.add('country')
             a.innerHTML = `
       <img class="country_img" src="${country.flags.png}" alt="">
